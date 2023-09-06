@@ -170,7 +170,7 @@ plt.title('Correlation Matrix')
 sns.heatmap(correlation_matrix,annot=True,linecolor='blue',cmap='BuPu',fmt=".2f",center=0) # color-heatmap : BuPu , Greens , YlGnBu , Blues
 
 
-
+plt.show()
 
 
 
