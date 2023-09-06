@@ -150,24 +150,24 @@ unique_data()
 isnull_data()
 hist_plot()
 box_plot()
-# cat_data()
+cat_data()
 scatterr()
-cat_pie()
-bar_plot()
+# cat_pie()
+# bar_plot()
 plt.show()
 
 
 
 # Heatmap:-
 # Calculate correlation matrix
-# correlation_matrix = df.corr()
+correlation_matrix = df.corr()
 
-# mask= np.triu(np.ones_like(correlation_matrix,dtype=bool)) # gpt
+mask= np.triu(np.ones_like(correlation_matrix,dtype=bool)) # gpt
 
 # # Create a heatmap using Matplotlib
-# plt.figure(figsize=(8, 6))
-# plt.title('Correlation Matrix')
-# sns.heatmap(correlation_matrix,annot=True,linecolor='blue',cmap='BuPu',fmt=".2f",center=0) # color-heatmap : BuPu , Greens , YlGnBu , Blues
+plt.figure(figsize=(8, 6))
+plt.title('Correlation Matrix')
+sns.heatmap(correlation_matrix,annot=True,linecolor='blue',cmap='BuPu',fmt=".2f",center=0) # color-heatmap : BuPu , Greens , YlGnBu , Blues
 
 
 
